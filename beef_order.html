@@ -1,0 +1,229 @@
+<!doctype html>	    <!-- Author:	JOSH CASTAGNA   -->
+<html lang="en">    <!-- Date:	10/12/2021		    -->			
+<head>		        <!-- Desc:	Allows user to select amount of meat to order      -->		
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double C Lowlines - Beef Order Page</title>
+    <meta name="description" content="Order your own Angus beef fresh from out farm.  Learn details on hwo to order.">
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <a href = "index.html"> <figure id ="logo" ><img  src="images/logoDark.png" alt = "logo"/></figure></a>
+    <h1>Double C Lowlines</h1>
+</header>
+<nav>
+<a href = "index.html">HOME</a>
+<a href = "contacts.html">CONTACTS</a>
+<a href = "about.html">ABOUT US</a>
+<a href = "sale_barn.html">SALE BARN</a>
+<a href = "beef_order.html" id="currentpg">BEEF ORDERS</a>
+<a href = "gallery.html">GALLERY</a>
+</nav>
+<main id="beef_order">
+<article>
+<h2>Farm Fresh to Your Table</h2>
+<p>We sell our beef by the whole, half, and quarter. We price based off of live weight. Our steers' live weight will be approximatley 1000 lbs. Your finished product will weigh approximatley 425 lbs. <br><br>We will deliver to the locker and you will pick your meat up directly from the processor. <br> Scroll below to fill out an order form. </p>
+
+<h2>MEAT ORDER DETAILS AND CARE</h2>
+<ul>
+    <li>Please call the processor for customized cutting instructions.</li>
+    <li><em>Tip: for a whole steer, it is reccommeneded you have 16 cubic feet of freezer space.</em></li>
+</ul>
+</article>
+<aside id="orderNotif"><b>SOLD OUT FALL 2021 <br> TAKING ORDERS FOR SPRING 2022</b></aside>
+<form action="processForm.php" method="POST"> <!--ORDER FORM (note: I did not feel comfortable with adding a payment information field until I know more about web security, this is merely an example of other fields)-->
+    <fieldset id="orderSelectField">
+        <legend>Order Selection</legend>
+        <label>Your Order Selection:</label>
+        <select id="orderSelect" name="orderSelect">
+            <option value="Quarter-Order">Quarter - $2.00/lbs</option>
+            <option value="Half-Order">Half - $2.00/lbs</option>
+            <option value="Whole-Order"> Whole - $1.75/lbs</option>
+        </select>
+    </fieldset>
+    <fieldset id="billingAddress">
+        <legend>Billing Address</legend>
+        <label for="billFName">Name:</label>
+            <input id="billFName" name="BillingFirstName" type="text" required="required" placeholder="First Name"/>
+            <input id="billLName" name="BillingLastName" type="text" required="required" placeholder="Last Name"/>
+            <br>
+            <label for="billEmail">Email Address:</label>  <input id="billEmail" name="BillingEmail" type="email" required="required" placeholder="youremail@example.com"/>
+            <br>
+            <label for="billStreet">Street Address:</label>
+            <input id="billStreet" name="BillingStreet" type="text" required="required" placeholder="1234 Holly Rd, etc."/>
+            <br>
+            <label for="billCity">City:</label>
+            <input id="billCity" name="BillingCity" type="text" required="required" />
+            <label for="billState">State:</label>
+            <select id="billState" name="BillingState">
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="DC">DC</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
+            </select>
+            <br>
+            <label for="billZip">Zip:</label>
+            <input id="billZip" name="BillingZip" type="number" required="required" placeholder="Enter postal code"/>
+            <br>
+            <label for="billPhone">Phone:</label>
+            <input id="billPhone" name="BillingPhone" type="tel" required="required" placeholder="Please include area code"/>
+    </fieldset>
+    <fieldset id="shippingAddress">
+    <legend>Shipping Address</legend>
+    <div class="checks">
+        <input id="sameAddr" name="SameAddress" type="checkbox" />
+        <label for="sameAddr">same as billing address</label>
+     </div>
+     <label for="shipFName">Name:</label>
+     <input id="shipFName" name="shippingFirstName" type="text" required="required" placeholder="First Name"/>
+     <input id="shipLName" name="shippingLastName" type="text" required="required" placeholder="Last Name"/>
+     <br>
+     <label for="shipEmail">Email Address:</label>  <input id="shipEmail" name="shipEmail" type="email" required="required" placeholder="youremail@example.com"/>
+     <br>
+     <label for="shipStreet">Street Address:</label>
+     <input id="shipStreet" name="shippingStreet" type="text" required="required" placeholder="1234 Holly Rd, etc."/>
+     <br>
+     <label for="shipCity">City:</label>
+     <input id="shipCity" name="shippingCity" type="text" required="required" />
+     <label for="shipState">State:</label>
+     <select id="shipState" name="shippingState">
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DE">DE</option>
+        <option value="DC">DC</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+     </select>
+     <br>
+     <label for="shipZip">Zip:</label>
+     <input id="shipZip" name="shipingZip" type="number" required="required" placeholder="Enter postal code"/>
+     <br>
+     <label for="shipPhone">Phone:</label>
+     <input id="shipPhone" name="shipingPhone" type="tel" required="required" placeholder="Please include area code"/>
+    </fieldset>
+    <fieldset id="shipping">
+    <legend>Shipping Method</legend>
+    <input type="radio" id="ship1" name="shipping" value="Pickup">
+    <label for="ship1">Pickup</label><br>
+    <input type="radio" id="ship2" name="shipping" value="Delivery">
+    <label for="ship2">Delivery (only within state)</label><br><br>
+
+    </fieldset>
+  <input id="Submit" type="submit" value="Send">
+</form>
+
+</main>
+<footer>
+    <ul id="miniNav">
+    <li><a href = "contacts.html">Contacts</a></li>
+    <li><a href = "about.html">About Us</a></li>
+    <li><a href = "sale_barn.html">Sale Barn</a></li>
+    <li><a href = "beef_order.html">Beef Orders</a></li>
+    <li><a href = "gallery.html">Gallery</a></li>
+</ul>
+<aside>All images and video taken by James Castagna. <br> Double C Lowlines Logo by Joshua Castagna.</aside>
+
+<div><p>&copy; 2009-<span id="copyright">2019</span> Double C Lowlines LLC</p></div></footer>
+</div>
+<script src="scripts/order.js"></script>
+<script src="scripts/copyright.js"></script>
+</body>
+</html>

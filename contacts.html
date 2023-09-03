@@ -1,0 +1,91 @@
+<!doctype html>	    <!-- Author:	JOSH CASTAGNA   -->
+<html lang="en">    <!-- Date:	10/11/2021		    -->			
+<head>		        <!-- Desc:	Contacts Page (has location, contact information, and a form to email)      -->		
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double C Lowlines - Contact Information</title>
+    <meta name="description" content="Contact us at Double C Lowlines for inquiries about our beef and cattle.">
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <a href = "index.html"> <figure id ="logo" ><img  src="images/logoDark.png" alt = "logo"/></figure></a>
+    <h1>Double C Lowlines</h1>
+</header>
+<nav>
+<a href = "index.html">HOME</a>
+<a href = "contacts.html" id="currentpg">CONTACTS</a>
+<a href = "about.html">ABOUT US</a>
+<a href = "sale_barn.html">SALE BARN</a>
+<a href = "beef_order.html">BEEF ORDERS</a>
+<a href = "gallery.html">GALLERY</a>
+</nav>
+<main id="contacts">
+
+<div>
+<section id="contactInfo">
+<H2>Contact Information</H2>
+   <b>Hours: M-F (8:00 AM - 6:00 PM )</b>
+<ul>
+        <li>Jamie Castagna</li>
+        <li><a href="tel:317-513-9575">(317)513-9575</a></li>
+        <li>jamiecastagna@DoubleCLowlines.com</li>
+</ul>
+    <br>
+    <ul>
+        <li>Gino Castagna</li>
+        <li><a href="tel:573-754-2489">(573)754-2489</a></li>
+        <li>ginocastagna@DoubleCLowlines.com</li>
+    </ul>
+</section>
+
+<section id="emailForm">
+    <h2> Contact Us</h2>
+    <form id="formForEmail" method="post" action="mail.php">
+    <div class="formGroup">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required>
+    </div>
+    <div class="formGroup">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" required>
+    </div>
+    <div class="formGroup">
+        <label id="textboxLabel" for="content">Your Message</label>
+        <textarea  id="content" name="message" required>
+        </textarea>
+    </div>
+    <input id="Submit" type="submit" value="Send">
+    </form>
+</section>
+</div>
+<aside id="locationDetails">
+<h2>Location</h2>
+<div><p> 17933 Highway 54 <br> Bowling Green, MO 63334</p></div>
+<!-- google maps display of address-->
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12335.465365170825!2d-91.13439670777542!3d39.38190200777783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87de7c1e723597f9%3A0x95914e0b37e52a32!2s17933%20US-54%2C%20Bowling%20Green%2C%20MO%2063334!5e0!3m2!1sen!2sus!4v1634068868327!5m2!1sen!2sus"  allowfullscreen="" loading="lazy"></iframe>
+</aside>
+
+
+
+</main>
+<footer>
+    <ul id="miniNav">
+    <li><a href = "contacts.html">Contacts</a></li>
+    <li><a href = "about.html">About Us</a></li>
+    <li><a href = "sale_barn.html">Sale Barn</a></li>
+    <li><a href = "beef_order.html">Beef Orders</a></li>
+    <li><a href = "gallery.html">Gallery</a></li>
+</ul>
+<aside>All images and video taken by James Castagna. <br> Double C Lowlines Logo by Joshua Castagna.</aside>
+
+<div><p>&copy; 2009-<span id="copyright">2019</span> Double C Lowlines LLC</p></div></footer>
+</div>
+<script src="scripts/copyright.js"></script>
+</body>
+</html>

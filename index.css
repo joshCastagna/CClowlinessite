@@ -1,0 +1,753 @@
+/*
+	   Author:			JOSH CASTAGNA
+	   Date Written: 	10/12/2021
+	   Description:		CSS for Final Project
+*/
+
+
+@import url(fonts/foglihten.css); 
+@import url(fonts/patua-one.css);
+@import url(fonts/merriweather.css);
+
+
+body 
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+            min-width: 480px;
+            margin: auto;
+            margin-top: 0px;
+            font-family: MerriweatherRegular, Georgia, Garamond;
+            background-color: rgb(219, 219, 219);
+        }
+
+#logo img {
+    width: 205px;
+    height: auto;
+    }
+
+h1      {   font-family: FoglihtenNo01Regular;
+            font-weight: normal;
+            font-size: 2.5em;
+        }
+
+header  {   background-color: rgb(3, 2, 2);
+            color:rgb(245, 162, 67);
+            text-align: center;
+            padding: 2px;
+        }
+
+/*========== NAVIGATION ================ */
+nav {   
+        font-family: PatuaOneRegular, Georgia, Garamond;
+        border-top: 1px solid white;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(116, 24, 24);
+        color: rgb(219, 219, 219);
+        padding: 5px 0px;
+    }
+
+nav a {
+        position: relative;
+        padding-top: 5px;
+        padding-bottom:5px; 
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        background: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background .5s ease
+        }
+
+
+nav a:link { color: rgb(241, 241, 241);}
+        
+nav a:visited { color: rgb(241, 241, 241);}
+        
+nav a:hover {
+            color: #cf9800;
+            text-shadow: 0.5px 0.5px 0.5px rgb(92, 61, 4);
+            background-position: left;
+        }
+        
+ nav a:link 
+ {
+    text-decoration: none;
+ }
+
+    main a:link { color: rgb(16, 115, 161);}
+    #line 
+    {
+        width: 1px;
+        height: 400px;
+    }
+    #currentpg 
+    {
+        text-decoration: overline;
+        color: #cf9800;
+    }
+
+
+/*========= HOME PAGE ====================== */
+
+    #front 
+    {
+        align-items: center;
+        padding: 0px;
+        margin: 0px; 
+    }
+        #front img 
+            {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid;
+            }
+        
+        #line
+        {
+            display: none;
+        }
+
+
+    #main article {
+        border: 1px solid #5e461b;
+        padding: 10px;
+        margin: 10px 3px;
+        background-color: #fff8f2;
+        border-radius: 3px;
+        box-shadow: 3px 2px 2px #888899;
+        }
+    #main article section 
+    {
+      background-color: rgb(116, 24, 24);
+      padding: 15px;
+      margin: 10px;
+      border-radius: 2px;
+      box-shadow: 3px 2px 2px #888899;
+    }
+
+   .box a
+   { 
+       color:rgb(255, 255, 255);
+       text-decoration: none;
+    }
+    .box a:link
+    { 
+        color:rgb(255, 255, 255);
+     }
+
+    .box a:hover
+    { 
+        color: #cf9800;
+        text-shadow: 2px 2px black;
+        text-decoration: none;
+     }
+    #main figure 
+    {
+       display: none;
+    }
+
+/*========= CONTACTS =============== */
+        #contacts
+        {
+            max-width: 470px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            justify-content: center;
+            list-style: none;
+        }
+
+        #contacts #contactInfo {
+            
+            min-width: 450px;
+            font-size: 0.9em;
+        }
+        #contacts #contactInfo ul{
+            font-size: 1.2em;
+           list-style-type: none;
+           padding: 10px;
+           background-color: #ccc;
+        }
+        #contacts #contactInfo ul a:link{
+         text-decoration: none;
+        }
+
+
+    footer 
+    {   background-color: rgb(3, 2, 2);
+        color:rgb(219, 219, 219);
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+    footer ul { list-style: none; 
+                min-width: 20%;  
+                border-right: 1px solid white;
+                margin: 5px;
+                padding-left: 3px;
+              }
+        
+    footer ul li {margin: 4px;}
+    footer ul li a:link {text-decoration: none; 
+                         color: #806e3f;}
+    footer ul li a:visited {color: #806e3f;}
+    footer ul li a:hover {color: white;}
+    footer aside 
+                {  
+                text-align: right;
+                min-width: 55%;
+                padding: 5px;
+                }
+
+    footer div {width: 100%;
+                margin: 5px;
+                margin-bottom: 0px;
+                }
+
+#emailForm 
+    {
+        border: 1px solid #8a8a8a;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+    }
+
+#map
+{
+    width: 450px;
+    height: 450px; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+#formForEmail 
+    {   min-width: 80%;
+        justify-content: right;
+        text-align: right;
+        flex-direction: column;
+        justify-content: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+.formGroup 
+    {   margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; 
+    }
+
+.formGroup input, .formGroup textarea
+    {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+.formGroup label 
+    {
+        align-self: center;
+        width: 120px; 
+	    display: block;
+        margin-right: 30px;
+    }
+
+#Submit 
+    {   margin-top: 10px;
+        align-self: end;
+        width: 100px;
+    }
+
+.formGroup #textboxLabel
+    {   align-self:initial; }
+
+.formGroup textarea
+    {   margin-left: 10px;
+        height: 120px;
+    }
+  
+/*========= ABOUT =============== */
+#about 
+{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about article 
+    {   padding: 5px;
+        margin: 10px 15px;
+        background-color: #fff8f2;
+        border-radius: 3px;
+    }
+#about #contactUs {width: 400px;}
+
+#about figure 
+    {   text-align:center;
+        width:100%;
+        display:block;
+        margin:auto;
+    }
+
+#about img  
+    {   
+        border-radius: 2px;
+        text-align: center;
+        border: 1px solid #8a8a8a ;                   
+        width: 450px;
+    }
+                    
+/*========= SALE BARN =============== */
+
+#SaleBarn
+    {
+        width: 90%;
+        justify-content: center;
+        margin:auto;
+    }
+#cattleDesc
+    {
+        margin-left: 10%;
+        width: 60%;
+    }
+#SaleBarn form 
+{
+   text-align: right;
+   
+}
+#SaleBarn form select
+{
+    margin-bottom: 5px;
+    padding: 3px;
+    letter-spacing: 1px;
+    font-size: 1em;
+    border: 0;
+    border: 1px solid; 
+    font-weight: bold;
+    background-color: #000;
+    color:rgb(255, 255, 255);
+}
+
+#SaleBarn #cattle
+{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}   
+#cowBox 
+    { 
+        height:500px;
+        border:1px solid #ccc;
+        font:16px/26px Georgia, Garamond, Serif;
+        overflow:auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      
+    }
+
+.cowElement
+    {
+        position: relative;
+        background:#ffffff;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        box-shadow: 0.5px 1px 5px #888899;
+        width: 350px;
+        height: 350px;
+        padding: 0px;
+    }    
+.cowElement .cattleType 
+{
+    top: 0px;
+    right: 0px;
+    padding: 5px;
+    position:absolute;
+    border-radius: 3px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    border: 1px double rgba(255, 255, 255);
+}
+.cowElement img 
+{  
+    width: 350px;
+    height: auto;
+}  
+.cowElement figcaption
+{   padding: 0px 4px;
+    font-family: Garamond,Serif;
+    font-size: 0.8em;
+}
+
+.cowElement table
+{
+    margin-top: 0px;
+    line-height: 1em;
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+}
+
+.cowElement table td
+{  
+   font-size: 1.2em;
+}
+
+/*========= GALLERY =============== */
+#gallery
+{
+    text-align: center;
+    text-shadow: 2px 0.5px 0.5px #ffffff;
+}
+#gallery h2
+{
+  text-shadow: 2px 0.5px 0.5px #ffffff;
+}
+#photos 
+{
+    display:flex; 
+    flex-direction: column;
+   
+}
+
+#photos figure
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ccc;
+    padding: 10px 10px;
+}
+#photos figure figcaption
+{
+    margin-top: 10px;
+}
+
+#photos img
+{
+    border-radius:4px;
+    width: 80%;
+    box-shadow: 0.5px 1px 3px #888899;
+}
+
+#beef_order 
+{
+        width: 90%;
+        justify-content: center;
+        margin:auto;
+       
+}
+
+#beef_order article
+{   
+    width: 60%;
+    margin: auto;
+}
+#beef_order fieldset
+{
+    margin: 10px;
+    text-align: left;
+    line-height: 2em;
+    background-color:#d3d3d3
+}
+#beef_order label {
+    margin-right: 10px;
+    display: inline-block;}
+
+#beef_order form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#beef_order form #Submit
+{
+    margin: 10px;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    font-family: Georgia, Garamond;
+    font-size: 2em;
+    background-color: #000;
+    border: 3px double rgb(255, 255, 255);
+}
+
+#beef_order form #Submit:hover
+{
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    background-color: rgb(37, 37, 37);
+    border: 5px double rgb(255, 255, 255);
+}
+
+#beef_order #orderNotif
+{
+    margin: auto;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, Garamond;
+    background-color: #000;
+    border: 3px double rgb(255, 255, 255);
+}
+/*====================================== */
+ /*============= LARGER DISPLAY ======== */   
+ /*====================================== */
+@media all and (min-width: 1024px) 
+{
+        #wrapper {
+            margin: 0px;
+            width: 100%;
+            max-width: 1200px;
+            text-size-adjust: 80%;
+        }
+        
+        #logo img {
+            float: left;
+            width: 200px;
+            height: auto;
+            }
+
+        
+        header {   
+            height: 230px;
+            padding: 5px;
+            margin: 0px;
+        }
+        header div {width: 100%} 
+        header h1 
+        {   
+            font-size: 4em;
+            position: absolute;
+            top: 15%;
+            left: 250px;
+        }   
+
+
+        nav {
+            flex-direction: row;
+            font-size: 1.8em;
+            display: flex;
+            padding-left: 100px;
+            padding-right: 100px;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1 1 100%;
+            order: 1;
+        }
+
+       #main {
+           display: flex;
+           flex-direction: row;
+       } 
+        
+       #leftcolumn
+       {
+        border-right: 1px solid #5e461b;
+        padding-right: 20px;
+        padding-top: 80px;
+       }
+
+       #main article 
+       {
+        width: 600px;
+       }
+       #main figure 
+       {
+           display: flex;
+           width: 30%;
+       }
+       #main figure img 
+       {
+           border-radius: 4px;
+            border: 1px solid #5e461b;
+        }
+      #contacts
+      {
+          max-width: 80%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap:wrap;
+      }
+
+      #contactInfo {width: 50%;}
+      
+      #locationDetails {
+        justify-content: right;
+        margin-left: 80px;  
+        width: 200px;}
+
+       footer {justify-content: space-around;
+                flex-direction: column;
+            }
+
+       footer ul { list-style: none; 
+        min-width: 20%;  
+        border-right: none;
+        margin: 5px;
+        padding-left: 3px;
+      }
+
+      footer aside 
+      {  
+      text-align: left;
+      min-width: 55%;
+      padding: 5px;
+      }
+
+footer div {width: 100%;
+      margin: 5px;
+      margin-bottom: 0px;
+      }
+
+      #about 
+      {
+          margin: auto;  
+          width: 75%;
+          justify-items: center;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: row;
+          flex-wrap: nowrap;
+      }
+ 
+      #about article
+      { 
+          height: auto;
+          padding: 10px;
+          margin: 30px;
+      }
+      #about figure
+      {   margin-top: 30px;
+          margin-bottom: 10px;
+      }
+      #about #contactUs
+      {
+        width: 400px; 
+      }
+    
+     
+
+      #photos 
+      {
+          display:flex; 
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 0px; 
+      }
+      #photos figure
+      { 
+          max-width: 500px;
+      }
+      #photos img
+      {
+          border-radius:4px;
+          height: auto;
+        
+          margin: 0px;
+          box-shadow: 0.5px 1px 3px #888899;
+      }
+      
+      #beef_order form {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    #beef_order #orderNotif
+{
+  max-width: 45%;
+  justify-content: center;
+}
+    }
+
+/*====================================================== */
+/* ============ MAX VIEWPORT WIDTH ===================== */
+/*====================================================== */
+@media all and (min-width: 1280px) {
+    #wrapper 
+    {
+        max-width: none;
+        width: 100%
+    }
+    
+   #front {
+       opacity: 80%;
+       margin-bottom: -4px;
+   }
+
+   #main {
+    z-index: 100;
+    position:absolute;
+    top: 50%;
+    margin: 10px;
+    width: 99%;
+}
+    #main article {
+        position: relative;
+        top: -100px;
+        box-shadow: 3px 2px 15px #141422;
+    }
+    #leftcolumn
+    {
+     border-right: none;
+     padding-right: 20px;
+    }
+    #main figure 
+    {
+        display: none;
+    }
+}
+
+/*======= PRINT ====== */
+
+@media print {
+    #wrapper {
+        min-width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    figure {
+        display: none;
+    }
+    footer #miniNav {display: none;}
+    img {display: none;}
+    
+
+    header ,
+    main > *,
+    div,
+    article,section,figure,a,
+    aside > *,
+    footer,link {
+        float: none;
+        border: none;
+        display: block;
+        background-color: #FFFFFF;
+        color: #000000;
+        box-shadow: 0px 0px 0px #FFFFFF;
+    }
+
+    #box a,#contactInfo ul li a {color:rgb(0, 0, 0)}
+
+    #cowBox
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+}

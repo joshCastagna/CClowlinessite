@@ -1,0 +1,62 @@
+<!doctype html>	    <!-- Author:	JOSH CASTAGNA   -->
+<html lang="en">    <!-- Date:	10/11/2021		    -->			
+<head>		        <!-- Desc:	Displays cattle on the farm for sale      -->		
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double C Lowlines - Sale Barn</title>
+    <meta name="description" content="Lowline cattle available to purchase at our farm. See our bull and heifer availability. ">
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <a href = "index.html"> <figure id ="logo" ><img  src="images/logoDark.png" alt = "logo"/></figure></a>
+    <h1>Double C Lowlines</h1>
+</header>
+<nav>
+<a href = "index.html">HOME</a>
+<a href = "contacts.html" >CONTACTS</a>
+<a href = "about.html">ABOUT US</a>
+<a href = "sale_barn.html" id="currentpg">SALE BARN</a>
+<a href = "beef_order.html">BEEF ORDERS</a>
+<a href = "gallery.html">GALLERY</a>
+</nav>
+<main id="SaleBarn">
+<section id="cattleDesc">    
+    <h2>Our Cattle</h2>
+    <p>We have fullblood and percentage Aberdeen Angus.  For inquiries about availability and genetics please contact us. </p>
+</section>
+<section id="cattle">
+    <form>  <!--FORM TO SELECT SPECIFIC TYPE OF CATTLE (will filter shown results)-->
+        <label for="cattleSelect">Specify cattle:</label>   
+        <select id="cattleSelect" name="cattleSelect" >
+            <option value="ALL" disabled="disabled" selected="selected" >Select</option>    
+            <option value="BULL">Bull</option>
+            <option value="HEIFER">Heifer</option>
+            <option value="ALL"  >All</option>
+        </select>
+    </form>
+    <section id="cowBox">
+        <!-- FILLED BY JAVASCRIPT -->
+    </section>
+</section>
+</main>
+<footer><ul id="miniNav">
+    <li><a href = "contacts.html">Contacts</a></li>
+    <li><a href = "about.html">About Us</a></li>
+    <li><a href = "sale_barn.html">Sale Barn</a></li>
+    <li><a href = "beef_order.html">Beef Orders</a></li>
+    <li><a href = "gallery.html">Gallery</a></li>
+</ul>
+<aside>All images and video taken by James Castagna. <br> Double C Lowlines Logo by Joshua Castagna.</aside>
+
+<div><p>&copy; 2009-<span id="copyright">2019</span> Double C Lowlines LLC</p></div></footer>
+</div>
+<script src="scripts/sale_barn.js"></script>
+<script src="scripts/copyright.js"></script>
+</body>
+</html>
